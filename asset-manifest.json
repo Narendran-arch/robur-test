@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/robur-test/static/css/main.d8967231.css",
+    "main.js": "/robur-test/static/js/main.ddad4af0.js",
+    "static/js/453.cd2c7a5c.chunk.js": "/robur-test/static/js/453.cd2c7a5c.chunk.js",
+    "static/media/Roburbgf1.png": "/robur-test/static/media/Roburbgf1.42430585ea127a2b83eb.png",
+    "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
+    "static/media/3DDumbbell.png": "/robur-test/static/media/3DDumbbell.24568ad42f529a63ce33.png",
+    "static/media/amenities8.png": "/robur-test/static/media/amenities8.5ef6385f6ecc9b76dd63.png",
+    "static/media/amenities3.png": "/robur-test/static/media/amenities3.12d9afd9f557ef30a229.png",
+    "static/media/amenities4.png": "/robur-test/static/media/amenities4.d3f66b18ab9f8969aca3.png",
+    "static/media/amenities7.png": "/robur-test/static/media/amenities7.7dab63908e527b6c8a35.png",
+    "static/media/amenities2.png": "/robur-test/static/media/amenities2.bfb441d0ad100cae4de4.png",
+    "static/media/amenities6.png": "/robur-test/static/media/amenities6.f4ff9c3f1c262c2b091d.png",
+    "static/media/amenities5.png": "/robur-test/static/media/amenities5.91ce83f0316c0ee9d064.png",
+    "static/media/amenities1.png": "/robur-test/static/media/amenities1.d7ecd95f71c71267af78.png",
+    "static/media/Roburlogowhite.png": "/robur-test/static/media/Roburlogowhite.3daa8de747b1b1747395.png",
+    "static/media/aAtmospheric.otf": "/robur-test/static/media/aAtmospheric.250c58df1ee887cdb3b0.otf",
+    "static/media/aAtmospheric.ttf": "/robur-test/static/media/aAtmospheric.f7d9830b308ca5f8ee22.ttf",
+    "index.html": "/robur-test/index.html",
+    "main.d8967231.css.map": "/robur-test/static/css/main.d8967231.css.map",
+    "main.ddad4af0.js.map": "/robur-test/static/js/main.ddad4af0.js.map",
+    "453.cd2c7a5c.chunk.js.map": "/robur-test/static/js/453.cd2c7a5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8967231.css",
+    "static/js/main.ddad4af0.js"
+  ]
+}
