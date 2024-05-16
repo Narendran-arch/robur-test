@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "gontserrat";
+    src: url('../../fonts/Gontserrat-Regular.ttf');
+        
+  }
+.map {
+    margin: 0.5rem 0 0 0;
+    width: 60vw; /* Set the desired width */
+    height: 50vh; /* Set the desired height */
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+
+  }
+  .contact-main-container{
+    background-color: rgba(0, 0, 0, 0.881);
+    width: 100vw;
+    background-size: 60vw 50vh;
+
+  }
+  .contact-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bglog{
+    margin-right: 4rem;
+    width: 28vw;
+    height: 40vh;
+  }
+  .contact-map-container{
+    position: relative;
+
+  }
+  .contact-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:6rem;
+    left:60rem;
+  }
+  .contact-number-one{
+    font-size: small;
+    position: absolute;
+    top: 6%;
+    left:42.5%;
+    width: max-content;
+    display: flex;
+    background-color:  #F07C00;
+    color: white;
+    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);  
+  }
+  .contact-email{
+    position:absolute;
+    top:8rem;
+    right: 42.7rem;
+    width: max-content;
+    font-size: small;
+    display: flex;
+    background-color:  #F07C00;
+    color: white;
+    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
+     
+    
+  }
+  .contact-address{
+    width: 25vw;
+    position: absolute;
+    top:13rem;
+    right:4rem;
+    font-size: small;
+    display: flex;
+    background-color:  #F07C00;
+    color: white;
+    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
+
+  }
+  .contact-number-two{
+    width: max-content;
+    font-size: small;
+position: absolute;
+top: 4.8rem;
+right: 41rem;
+    display: flex;
+    background-color:  #F07C00;
+    color: white;
+    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
+  }
+  .contact-icon {
+    padding: 0.2rem;
+    size: xl;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: #F07C00;
+    width: 4vw;
+    height: 4vh;
+    padding-right: 2rem;
+  }
+  .contact-handle{
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-content{
+    padding:0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-logo-des{
+    padding: 1rem;
+    font-family: "gontserrat";
+    font-size: x-large;
+    font-weight: bolder;
+    color: #F07C00;
+  }
+  .contact-logo-destwo{
+    padding: 1rem;
+    font-family: "gontserrat";
+    font-size: small;
+    color: white;
+  }

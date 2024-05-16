@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "gontserrat";
+  src: url('../../fonts/Gontserrat-Regular.ttf');
+      
+}
+.Price-main-container{
+    background-image: url("/src/image/fourthbg2.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.price-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #f1f1f1;
+    box-shadow: rgba(96, 96, 96, 0.386) 0px 22px 70px 4px;}
+    .price-card1-head{
+        padding-top: 3rem;
+        font-family: "gontserrat";
+        font-size: large;
+        color: white;
+    }
+    .price-card1-amount{
+        font-size: x-large;
+        
+        font-weight: bolder;
+        padding-top: 1rem;
+        font-family: "gontserrat";
+        color: #F07C00;
+    }
+    .price-card-second-bg{
+        background-color: #F07C00;
+        height: 100%;
+    }
+    .price-card2-head{
+        padding-top: 3rem;
+        font-family: "gontserrat";
+        font-size: large;
+        color: rgb(0, 0, 0);
+    }
+    .price-card2-amount{
+        font-size: x-large;
+        font-weight: bolder;
+        padding-top: 1rem;
+        font-family: "gontserrat";
+        color: #F07C00;
+    }
+.price-card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    clip-path: polygon(100% 0%, 68% 0%, 25% 0%, 0% 0%, 0% 25%, 0% 83%, 0% 100%, 37% 100%, 65% 100%, 81% 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%);       background-color: #252525;
+    box-shadow: rgba(96, 96, 96, 0.386) 0px 22px 70px 4px;}
+    .price-heading-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    .price-split{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+        font-size: larger;
+        font-family: "gontserrat";
+    }
+    .price-split div{
+        padding: 3rem 11rem;
+    }
+    .price-heading{
+
+        font-size: larger;
+        font-weight: bolder;
+        font-family: "gontserrat";
+
+    }
+    .price-heading span{
+        color:#F07C00;
+    }
+    .price-subhead{
+        width: 50vw;
+        color:#a6a6a6;
+        font-family: "gontserrat";
+        font-size: medium;
+    }
+    .price-subhead p{
+        text-align: center;
+        font-weight: 600;
+
+    }
+    .price-enroll-continer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-bottom: 2rem;
+    }
+    .price-enroll-button{
+        width: 11vw;
+        padding: 0.4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #F07C00;
+        color: white;
+        outline: 2px solid #ffffff;
+        outline-offset: 3px;
+    
+        
+    }
+    /* Add hover effect on price cards */
+.price-card-second-bg:hover ,
+.price-card2:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Slide out animations */
+.slide-out-left {
+    animation: slideOutLeft 0.5s ease ;
+  }
+  
+  .slide-out-top {
+    animation: slideOutTop 0.5s ease ;
+  }
+  
+  .slide-out-bottom {
+    animation: slideOutBottom 0.5s ease ;
+  }
+  
+  .slide-out-right {
+    animation: slideOutRight 0.5s ease ;
+  }
+  
+  /* Keyframe animations */
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideOutTop {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideOutBottom {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+  }
+  
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .slide-left {
+    animation: slideInLeft 1s ease ;
+  }
+  
+  .slide-right {
+    animation: slideInRight 1s ease ;
+  }
+  
+  .slide-top {
+    animation: slideInTop 1s ease ;
+  }
+  
+  .slide-bottom {
+    animation: slideInBottom 1s ease ;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation: fadeIn 3.5s ease forwards;
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .fade-out {
+    animation: fadeOut 0.5s ease forwards;
+  }
+ 
+
+    @media (min-width: 320px) and (max-width: 480px) {
+  
+        .price-card-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .Price-main-container {
+            height: auto;
+        }
+        .price-split div{
+            padding: 0;
+        }
+        .price-split{
+            position: relative;
+        }
+        .price-heading-container{
+            padding:1rem
+        }
+        .price-subhead{
+            width:90vw;
+            font-size: small;
+            
+        }
+        .price-heading{
+            font-size: small;
+        }
+        .price-card1{
+          clip-path: polygon(100% 0%, 38% 0%, 2% 0%, 0% 0%, 0% 25%, 0% 100%, 16% 100%, 45% 100%, 50% 95%, 55% 100%, 100% 100%, 100% 72%, 100% 45%, 100% 25%);
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+        }
+        .price-card2{
+            justify-content: center;
+
+            width: 200px;
+            height: 200px;
+        }
+        .price-card1-head{
+            padding: 0%;
+            font-size: small;
+        }
+        .price-card2-head{
+            padding: 0%;
+            font-size: small;
+        }
+        .price-enroll-button{
+            width: 41vw;
+            margin: 2.4rem 0;
+            
+        }
+        .price-split-text1{
+            opacity: 0;
+            height: max-content;
+            font-size:  large;
+            top: -19rem;
+            right: 33px;
+            position: absolute;
+            writing-mode: vertical-rl;
+        }
+        .price-split-text2{
+            opacity: 0;
+            position: absolute;
+            height: max-content;
+            font-size: large;
+            color: #F07C00;
+            top: -41rem;
+            left: 30px;
+            writing-mode: vertical-rl;
+        }
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+  
+        .price-card-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .Price-main-container {
+            height: auto;
+        }
+        .price-split div{
+            padding: 0;
+        }
+        .price-heading-container{
+            padding:1rem
+        }
+        .price-subhead{
+            width:90vw;
+            font-size: small;
+            
+        }
+        .price-heading{
+            font-size: small;
+        }
+        .price-card1{
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+        }
+        .price-card2{
+            justify-content: center;
+
+            width: 200px;
+            height: 200px;
+        }
+        .price-card1-head{
+            padding: 0%;
+            font-size: small;
+        }
+        .price-card2-head{
+            padding: 0%;
+            font-size: small;
+        }
+        .price-enroll-button{
+            width: 41vw;
+            margin: 2.4rem 0;
+            
+        }
+        .price-split-text1{
+            height: max-content;
+            font-size:  large;
+            top: 184rem;
+            right: 33px;
+            position: absolute;
+            writing-mode: vertical-rl;
+        }
+        .price-split-text2{
+            position: absolute;
+            height: max-content;
+            font-size: large;
+            color: #F07C00;
+            top: 162rem;
+            left: 30px;
+            writing-mode: vertical-rl;
+        }
+        
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+  
+        .price-card-container{
+            align-items: center;
+        }
+        .Price-main-container {
+            height: auto;
+        }
+        .price-split div{
+            padding: 0;
+        }
+        .price-heading-container{
+            padding:1rem
+        }
+        .price-subhead{
+            width:90vw;
+            font-size: small;
+            
+        }
+        .price-heading{
+            font-size: small;
+        }
+        .price-card1{
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+        }
+        .price-card2{
+            justify-content: center;
+
+            width: 180px;
+            height: 180px;
+        }
+        .price-card1-head{
+            padding: 0%;
+            font-size: x-small;
+        }
+        .price-card2-head{
+            padding: 0%;
+            font-size: x-small;
+        }
+        .price-enroll-button{
+            width: 41vw;
+            margin: 2.4rem 0;
+            
+        }
+        .price-split-text1{
+          
+            font-size:  small;
+            
+        }
+        .price-split-text2{
+           
+            font-size: small;
+            
+        }
+        
+      }
+      @media (min-width: 1025px) and (max-width: 1280px) {
+  
+        .price-card1{
+            width: 20vw;
+            height: 25vh;
+        }
+        .price-card2{
+            width: 20vw;
+            height: 25vh;
+        }
+        .Price-main-container{
+            height: auto;
+        }
+        .price-card1-head{
+            font-size: small;
+        }
+        .price-card2-head{
+            font-size: small;
+        }
+        .price-split div {
+            padding:  2rem 10rem;
+        }
+      }
+        
+      

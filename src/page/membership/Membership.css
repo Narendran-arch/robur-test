@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "aAtmospheric";
+    src: url('../../fonts/aAtmospheric.otf');
+    src: url('../../fonts/aAtmospheric.ttf') ;
+        
+  }
+.membership-main-container{
+    background-image: url("/src//image/thirdbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 137px 137px 137px;
+}
+.membership-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.membership-heading{
+    font-size: large;
+    font-family: "aAtmospheric";
+    color: white;
+}
+.membership-subhead{
+   font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+.membership-button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 241px;
+    height: 55px;
+    background-color: #F07C00;
+
+}
+.membership-button-container{
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;    
+}
+.slide-out-left {
+    animation: slideOutLeft 0.5s ease forwards;
+  }
+  
+  .slide-out-top {
+    animation: slideOutTop 0.5s ease forwards;
+  }
+  
+  .slide-out-bottom {
+    animation: slideOutBottom 0.5s ease forwards;
+  }
+  
+  .slide-out-right {
+    animation: slideOutRight 0.5s ease forwards;
+  }
+  
+  /* Keyframe animations */
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      visibility: hidden;    }
+  }
+  
+  @keyframes slideOutTop {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      visibility: hidden;    }
+  }
+  
+  @keyframes slideOutBottom {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      visibility: hidden;    }
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      visibility: hidden;    }
+  }
+  
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .slide-left {
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .slide-right {
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  .slide-top {
+    animation: slideInTop 1s ease forwards;
+  }
+  
+  .slide-bottom {
+    animation: slideInBottom 1s ease forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation: fadeIn 3.5s ease forwards;
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .fade-out {
+    animation: fadeOut 0.5s ease forwards;
+  }
+    
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.membership-main-container{
+    padding: 50px 0 ;
+}
+    .membership-heading{
+        font-size: 5pt;
+    }
+    .membership-button{
+        width: 150px;
+        height: 25px;
+        font-size: x-small;
+    }
+    .membership-subhead{
+        font-size: x-small;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+.membership-main-container{
+    padding: 50px 0 ;
+}
+    .membership-heading{
+        font-size: 7pt;
+    }
+    .membership-button{
+        width: 150px;
+        height: 25px;
+        font-size: x-small;
+    }
+    .membership-subhead{
+        font-size: x-small;
+    }
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .membership-main-container{
+        padding: 50px 0 ;
+    }
+        .membership-heading{
+            font-size: 8pt;
+        }
+        .membership-button{
+            width: 150px;
+            height: 25px;
+            font-size: x-small;
+        }
+        .membership-subhead{
+            font-size: x-small;
+        }
+    
+    
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .membership-heading{
+        font-size: small;
+    }
+    
+  }
