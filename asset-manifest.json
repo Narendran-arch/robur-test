@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.2f8087d2.css",
+    "main.css": "/robur-test/static/css/main.f0d82bb1.css",
     "main.js": "/robur-test/static/js/main.afd68ecf.js",
     "static/js/453.cd2c7a5c.chunk.js": "/robur-test/static/js/453.cd2c7a5c.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
@@ -17,6 +17,7 @@
     "static/media/amenities6.png": "/robur-test/static/media/amenities6.f4ff9c3f1c262c2b091d.png",
     "static/media/amenities5.png": "/robur-test/static/media/amenities5.91ce83f0316c0ee9d064.png",
     "static/media/amenities1.png": "/robur-test/static/media/amenities1.d7ecd95f71c71267af78.png",
+    "static/media/Gontserrat-ExtraBold.ttf": "/robur-test/static/media/Gontserrat-ExtraBold.45de232d5418bb950201.ttf",
     "static/media/Gontserrat-Regular.ttf": "/robur-test/static/media/Gontserrat-Regular.cc49d641c0b5d3d7b157.ttf",
     "static/media/conatactbglogo.png": "/robur-test/static/media/conatactbglogo.b01954e26fa5b1c061fb.png",
     "static/media/Roburlogowhite.png": "/robur-test/static/media/Roburlogowhite.3daa8de747b1b1747395.png",
@@ -24,12 +25,12 @@
     "static/media/aAtmospheric.otf": "/robur-test/static/media/aAtmospheric.250c58df1ee887cdb3b0.otf",
     "static/media/aAtmospheric.ttf": "/robur-test/static/media/aAtmospheric.f7d9830b308ca5f8ee22.ttf",
     "index.html": "/robur-test/index.html",
-    "main.2f8087d2.css.map": "/robur-test/static/css/main.2f8087d2.css.map",
+    "main.f0d82bb1.css.map": "/robur-test/static/css/main.f0d82bb1.css.map",
     "main.afd68ecf.js.map": "/robur-test/static/js/main.afd68ecf.js.map",
     "453.cd2c7a5c.chunk.js.map": "/robur-test/static/js/453.cd2c7a5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f8087d2.css",
+    "static/css/main.f0d82bb1.css",
     "static/js/main.afd68ecf.js"
   ]
 }
