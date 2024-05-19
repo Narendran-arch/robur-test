@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.693e019c.css",
-    "main.js": "/robur-test/static/js/main.861ff8ad.js",
+    "main.css": "/robur-test/static/css/main.d3e805a7.css",
+    "main.js": "/robur-test/static/js/main.e76393fd.js",
     "static/js/453.cd2c7a5c.chunk.js": "/robur-test/static/js/453.cd2c7a5c.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
     "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
@@ -24,13 +24,17 @@
     "static/media/contactuslogo.png": "/robur-test/static/media/contactuslogo.00f68bc730b0778630cc.png",
     "static/media/aAtmospheric.otf": "/robur-test/static/media/aAtmospheric.250c58df1ee887cdb3b0.otf",
     "static/media/aAtmospheric.ttf": "/robur-test/static/media/aAtmospheric.f7d9830b308ca5f8ee22.ttf",
+    "static/media/slick.svg": "/robur-test/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/robur-test/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/robur-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/robur-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/robur-test/index.html",
-    "main.693e019c.css.map": "/robur-test/static/css/main.693e019c.css.map",
-    "main.861ff8ad.js.map": "/robur-test/static/js/main.861ff8ad.js.map",
+    "main.d3e805a7.css.map": "/robur-test/static/css/main.d3e805a7.css.map",
+    "main.e76393fd.js.map": "/robur-test/static/js/main.e76393fd.js.map",
     "453.cd2c7a5c.chunk.js.map": "/robur-test/static/js/453.cd2c7a5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.693e019c.css",
-    "static/js/main.861ff8ad.js"
+    "static/css/main.d3e805a7.css",
+    "static/js/main.e76393fd.js"
   ]
 }
