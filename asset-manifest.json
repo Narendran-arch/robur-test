@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.437df4c4.css",
-    "main.js": "/robur-test/static/js/main.6d48cede.js",
+    "main.css": "/robur-test/static/css/main.01e245b7.css",
+    "main.js": "/robur-test/static/js/main.87bde6a3.js",
     "static/js/453.cd2c7a5c.chunk.js": "/robur-test/static/js/453.cd2c7a5c.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
     "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
@@ -21,6 +21,8 @@
     "static/media/Gontserrat-Regular.ttf": "/robur-test/static/media/Gontserrat-Regular.cc49d641c0b5d3d7b157.ttf",
     "static/media/conatactbglogo.png": "/robur-test/static/media/conatactbglogo.b01954e26fa5b1c061fb.png",
     "static/media/Roburlogowhite.png": "/robur-test/static/media/Roburlogowhite.3daa8de747b1b1747395.png",
+    "static/media/robursymbolmirrorhalf.png": "/robur-test/static/media/robursymbolmirrorhalf.97a6eb1e99f344538a5c.png",
+    "static/media/robursymbolhalf.png": "/robur-test/static/media/robursymbolhalf.a8212e820f2e7bedcf71.png",
     "static/media/contactuslogo.png": "/robur-test/static/media/contactuslogo.00f68bc730b0778630cc.png",
     "static/media/aAtmospheric.otf": "/robur-test/static/media/aAtmospheric.250c58df1ee887cdb3b0.otf",
     "static/media/aAtmospheric.ttf": "/robur-test/static/media/aAtmospheric.f7d9830b308ca5f8ee22.ttf",
@@ -29,12 +31,12 @@
     "static/media/slick.ttf": "/robur-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/robur-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/robur-test/index.html",
-    "main.437df4c4.css.map": "/robur-test/static/css/main.437df4c4.css.map",
-    "main.6d48cede.js.map": "/robur-test/static/js/main.6d48cede.js.map",
+    "main.01e245b7.css.map": "/robur-test/static/css/main.01e245b7.css.map",
+    "main.87bde6a3.js.map": "/robur-test/static/js/main.87bde6a3.js.map",
     "453.cd2c7a5c.chunk.js.map": "/robur-test/static/js/453.cd2c7a5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.437df4c4.css",
-    "static/js/main.6d48cede.js"
+    "static/css/main.01e245b7.css",
+    "static/js/main.87bde6a3.js"
   ]
 }
