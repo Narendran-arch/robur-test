@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.deb31ac2.css",
-    "main.js": "/robur-test/static/js/main.21f6a4a8.js",
-    "static/js/453.cd2c7a5c.chunk.js": "/robur-test/static/js/453.cd2c7a5c.chunk.js",
+    "main.css": "/robur-test/static/css/main.642b5f05.css",
+    "main.js": "/robur-test/static/js/main.0f80e26c.js",
+    "static/js/453.6772480d.chunk.js": "/robur-test/static/js/453.6772480d.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
     "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
     "static/media/backgroundtabport.png": "/robur-test/static/media/backgroundtabport.32c3f660756513379050.png",
     "static/media/backgroundtab.png": "/robur-test/static/media/backgroundtab.add1e11504fd7754c11e.png",
     "static/media/backgroundmobile.png": "/robur-test/static/media/backgroundmobile.210eee638d859165d801.png",
+    "static/media/DJ.png": "/robur-test/static/media/DJ.e2c44a633a50d09fbd30.png",
+    "static/media/GROUP TRAINING.png": "/robur-test/static/media/GROUP TRAINING.2949a4d6349e14e28534.png",
     "static/media/3DDumbbell.png": "/robur-test/static/media/3DDumbbell.24568ad42f529a63ce33.png",
+    "static/media/MMA SESSIONS.png": "/robur-test/static/media/MMA SESSIONS.c696f7d24f9afc10c2cc.png",
+    "static/media/ICE BATH.png": "/robur-test/static/media/ICE BATH.831087ef1221fa277d46.png",
+    "static/media/ZUMBA .png": "/robur-test/static/media/ZUMBA .0b952b543d9e2b14deab.png",
+    "static/media/PERSONAL TRAINING.png": "/robur-test/static/media/PERSONAL TRAINING.10f0ce5c19d3f763af19.png",
     "static/media/amenities8.png": "/robur-test/static/media/amenities8.5ef6385f6ecc9b76dd63.png",
     "static/media/amenities3.png": "/robur-test/static/media/amenities3.12d9afd9f557ef30a229.png",
     "static/media/amenities4.png": "/robur-test/static/media/amenities4.d3f66b18ab9f8969aca3.png",
+    "static/media/YOGA.png": "/robur-test/static/media/YOGA.41b73dd0ed2f97d4ae29.png",
+    "static/media/STEAM BATH.png": "/robur-test/static/media/STEAM BATH.557d08d508c7c4b8a1cc.png",
     "static/media/amenities7.png": "/robur-test/static/media/amenities7.7dab63908e527b6c8a35.png",
     "static/media/amenities2.png": "/robur-test/static/media/amenities2.bfb441d0ad100cae4de4.png",
     "static/media/amenities6.png": "/robur-test/static/media/amenities6.f4ff9c3f1c262c2b091d.png",
@@ -31,12 +39,12 @@
     "static/media/slick.ttf": "/robur-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/robur-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/robur-test/index.html",
-    "main.deb31ac2.css.map": "/robur-test/static/css/main.deb31ac2.css.map",
-    "main.21f6a4a8.js.map": "/robur-test/static/js/main.21f6a4a8.js.map",
-    "453.cd2c7a5c.chunk.js.map": "/robur-test/static/js/453.cd2c7a5c.chunk.js.map"
+    "main.642b5f05.css.map": "/robur-test/static/css/main.642b5f05.css.map",
+    "main.0f80e26c.js.map": "/robur-test/static/js/main.0f80e26c.js.map",
+    "453.6772480d.chunk.js.map": "/robur-test/static/js/453.6772480d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.deb31ac2.css",
-    "static/js/main.21f6a4a8.js"
+    "static/css/main.642b5f05.css",
+    "static/js/main.0f80e26c.js"
   ]
 }
