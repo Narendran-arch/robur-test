@@ -3,6 +3,11 @@
     src: url('../../fonts/Gontserrat-Regular.ttf');
         
   }
+  @font-face {
+    font-family: "gontserrat-bold";
+    src: url('../../fonts/Gontserrat-ExtraBold.ttf');
+        
+  }
 .about-main-container{
     padding:80px 137px;
     background-image: url("/src/image/3DDumbbell.png");
@@ -13,24 +18,24 @@
     flex-direction: column;
     align-items: center;
 }
-.about-heading-1{
-font-family: "gontserrat";
+.about-heading-1 h1{
+font-family: "gontserrat-bold";
 font-weight: bolder;
 }
 .about-content-container-description{
-
+    width: fit-content;
     font-family: "gontserrat";
     color: white;
     text-align: center;
-    padding:1rem;
+    padding:0rem 1rem 2rem 1rem;
     text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 9pt;
 }
 .about-content-container-description::first-letter {
     font-size: 15pt;
 }
 .about-heading-1 span{
-    font-family: "gontserrat", sans-serif;
+    font-family: "gontserratbold", sans-serif;
     font-weight: bolder;
     color:#F07C00;
 }
@@ -50,14 +55,15 @@ font-weight: bolder;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width:20vw;
-    height: 50vh;
+    justify-content: flex-start;
+    width:17vw;
+    height: 290px;
     background-color: #252525;
-    margin: 1rem;
+    margin: 2rem;
     border-radius: 25px;
 }
 .about-content-container{
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,62 +81,107 @@ font-weight: bolder;
 }
 .about-content-container-icons-heading hr{
     margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 80px;
     border-bottom: 1px solid #ccc;
 }
 .about-content-container-items:hover{
-    transform: scale(1.2); /* Scale the card on hover */
+    transform: scale(1.1); /* Scale the card on hover */
     transition: transform 0.3s ease; /* Add smooth transition */
+}
+.about-content-container-items:hover .about-content-container-icons-heading hr {
+    transform: scale(1.5);
+    transition: transform 0.3s ease; /* Add smooth transition */
+
 }
 
 @keyframes flipLeft {
     0% {
+        opacity: 0;
       transform: perspective(400px) rotateY(90deg);
-      opacity: 0;
+     
     }
     100% {
+        opacity: 100;
       transform: perspective(400px) rotateY(0deg);
-      opacity: 1;
+      
     }
   }
   
   .flip-left {
-    animation: flipLeft 1s ease ;
+    animation: flipLeft 1.5s ease  ;
+  }
+  @keyframes flipRight {
+    0% {
+      transform: perspective(400px) rotateY(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: perspective(400px) rotateY(90deg);
+      opacity: 0;
+    }
   }
   
+  .flip-right {
+    animation: flipRight 1s ease ;
+  }
+ .about-heading-1{
+    font-size: 16pt;
+ }
+  
 @media (min-width: 320px) and (max-width: 480px) {
+    .about-heading{
+        padding-top: 2.5rem;
+    }
   
     .about-content-container{
         flex-direction: column;
     }
     .about-main-container{
         padding: 0%;
-        background-position: center;
-        background-size: 500px;
+        background-position: 39% 50%;        background-size: 145%;
     }
     .about-heading-1 h1{
-        font-size: x-large;
-    }
+        font-size: 23pt;    }
     .about-heading-2{
         font-size: small;
     }
+    .about-content-container{
+        margin-bottom: 2rem;
+    }
+    .about-content-container-icons{
+        padding-top: 2rem;
+    }
     .about-content-container-items{
-        width:75vw;
-        height: 50vh;
+        width:66%;
+        height: 50%;
     }
     .about-content-container-description{
-        font-size: 8pt;
+        font-size: 7pt;
+        padding: 0rem 1.5rem 2.5rem 1.5rem; 
+               line-height: 1.7;
 
     }
     .about-content-container-description::first-letter {
         font-size: 12pt;
     }
     .about-content-container-icons-heading{
-        font-size: larger;
+        font-size: medium;
+    }
+    .about-content-container-items{
+        margin: 2rem;
     }
   }
   @media (min-width: 481px) and (max-width: 767px) {
-  
+    .about-content-container{
+        margin-bottom: 2rem;
+    }
+    .about-content-container-items{
+        margin: 2rem;
+    }
+    .about-content-container-items{
+        width: 58vw;
+    }
     .about-content-container{
         flex-direction: column;
     }
@@ -139,8 +190,8 @@ font-weight: bolder;
     }
     .about-main-container{
         padding: 0%;
-        background-position: center;
-    }
+        background-size: 124%;
+        background-position: 39% 50%;  }
     .about-heading-1 h1{
         font-size: xx-large;
     }
@@ -154,7 +205,17 @@ font-weight: bolder;
     flex-wrap: wrap;
   }
   .about-content-container-items{
-    flex: 0 0 43.3333%;  }
+    width:66%;
+    height: 50%;
+    flex: 0 0 40%; 
+ }
+ .about-content-container-icons-heading{
+    font-size: larger;
+ }
+ .about-content-container-description{
+    line-height: 1.7;
+    padding: 2rem;
+ }
     .about-heading-2{
         font-size: large;
     }
@@ -168,10 +229,31 @@ font-weight: bolder;
     }
     
   }
+  @media (min-width: 1281px) {
+    .about-content-container-items{
+        padding: 1rem;
+        height: 290px;
+    }
+    .about-main-container{
+        background-position: 382px -64px;
+        background-size: 1014px 880px;
+
+    }
+  }
   @media (min-width: 1025px) and (max-width: 1280px) {
   
    .about-content-container-items{
-    width: 22vw;
+        height: 43vh;
+        width: 22vw;
+        margin: 0.5rem;
+    padding: 0.5rem;
    }
+   .about-main-container{
+    background-position: 222px -6px;
+        background-size: 811px 694px;
+
+}
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
     
   }

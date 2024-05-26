@@ -3,25 +3,43 @@ import { useEffect, useState, useRef } from 'react';
 const useFadeInAnimation = (threshold = 0.1) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
+  const previousScrollY = useRef(0);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold }
-    );
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > previousScrollY.current) {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting && !isVisible) {
+              setIsVisible(true);
+            }
+          },
+          { threshold }
+        );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+        if (elementRef.current) {
+          observer.observe(elementRef.current);
+        }
+
+        return () => {
+          if (elementRef.current) {
+            observer.unobserve(elementRef.current);
+          }
+        };
+      } else {
+        // Reset isVisible state when the component scrolls out of view
+        setIsVisible(false);
+      }
+      previousScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [threshold]);
+  }, [threshold, isVisible]);
 
   return { isVisible, elementRef };
 };

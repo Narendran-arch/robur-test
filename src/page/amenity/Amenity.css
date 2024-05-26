@@ -1,0 +1,598 @@
+
+@font-face {
+    font-family: "gontserrat";
+    src: url('../../fonts/Gontserrat-Regular.ttf');
+        
+  }
+  @font-face {
+    font-family: "aAtmospheric";
+    src: url('../../fonts/aAtmospheric.otf');
+    src: url('../../fonts/aAtmospheric.ttf') ;
+        
+  }
+  @font-face {
+    font-family: "gontserrat-bold";
+    src: url('../../fonts/Gontserrat-ExtraBold.ttf');
+        
+  }.amenity-slider {
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .amenity-contianer{
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 100%;
+  }
+  .amenity-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .amenity-slider .slick-slide-content {
+    padding: 0; 
+    margin: 0;
+  }
+  .slick-slide{
+    overflow: hidden !important;
+    width: max-content !important;
+  }
+  .slick-track{
+    width: max-content !important;
+
+  }
+  .amenity-slider img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+
+  }
+  .mobile-view-slid img {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+
+  }
+  .amenity-slider img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.886); 
+    filter: none; 
+  }
+  .mobile-view-slid img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.886); 
+    filter: none; 
+  }
+    .caption {
+       
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    height: -moz-available;         
+    height: -webkit-fill-available;  
+    height: fill-available !important;
+    width:60%;
+    background-color: #f07c00cf;
+    text-align: end;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-overflow-scrolling: touch;
+
+    }
+    .mobile-caption{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: -moz-available;         
+    height: -webkit-fill-available;  
+    height: fill-available !important;
+    width:60%;
+        background-color: rgba(240, 124, 0, 0.8);
+        color: white;
+        text-align: end;
+        transition: opacity 0.3s ease;
+        clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+
+        z-index: 1;
+    }
+    .image-container:hover .mobile-caption {
+        display: block;
+        opacity: 1;
+      }
+    .caption-image-container img{
+        width: 47px;
+        height: 35px;
+        position: absolute;
+        margin-top: 10%;
+        right: 8%;
+       
+
+    }
+    .caption-description-container{
+       margin-top: 60%;
+       margin-right: 8%;
+       margin-left: 15%;
+       text-align: end;
+    }
+   
+    .caption-image-container{
+        position: relative;    
+    }
+    .slide--has-caption:hover .caption {
+   display: block !important;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 3;}
+   .image-container {
+    width: 100%;
+    height: 296px;
+   }
+   .caption-description-heading{
+    color: #2d2d2d;
+    font-family: "gontserrat-bold";
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 6%;
+}
+.mobile-caption-description-heading{
+    color: #2d2d2d;
+    font-family: "gontserrat-bold";
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 6%;
+}
+.back-button-skew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    color: white;
+ background-color:#f07c00;
+ -moz-transform: skew(-21deg, 0deg);
+-webkit-transform: skew(-21deg, 0deg);
+-o-transform: skew(-21deg, 0deg);
+-ms-transform: skew(-21deg, 0deg);
+transform: skew(-21deg, 0deg);
+}
+.amenity-header-buttons{
+    display: flex;
+}
+.next-button-skew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    color:#f07c00;
+
+    text-align: center;
+ background-color: white;
+ -moz-transform: skew(-21deg, 0deg);
+-webkit-transform: skew(-21deg, 0deg);
+-o-transform: skew(-21deg, 0deg);
+-ms-transform: skew(-21deg, 0deg);
+transform: skew(-21deg, 0deg);
+}
+   .caption-description-content{
+    z-index: 10;
+    font-family: "gontserrat";
+color: white;
+font-size: xx-small;
+   }
+   .mobile-caption-description-content{
+    z-index: 10;
+    font-family: "gontserrat";
+color: white;
+font-size: xx-small;
+   }
+   .amenity-header-description-contianer{
+    align-items: center;
+    display: flex;
+    flex: row;
+   }
+   .amenity-header-description-content{
+   
+
+    font-family: "gontserrat";
+    margin-right: 5%;
+    color:#8e8e8e;
+    width: 80%;
+   }
+   .amenity-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+   }
+   .amenity-header-title{
+    font-family: "aAtmospheric";
+    font-size: 36pt;
+    text-align: end;
+    width: 40%;
+    color: #2d2d2d;
+    padding:3% 6% 3% 3% ;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+    background-color:#f07c00;
+
+
+   }
+   .mobile-view-slid{
+    display: none;
+   }
+   .mobile-gallery {
+    display: none;
+  }
+  
+  
+   @media (min-width: 320px) and (max-width: 480px) {
+    .caption-text{
+        margin-left: 23%;
+        margin-right: 4%;
+        margin-top: 53%;
+        text-align: right;
+    
+    }
+    .caption-icon img{
+        width: 47px;
+        height: 35px;
+        position: absolute;
+        margin-top: 10%;
+        right: 8%;
+    }
+    
+    .mobile-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-item {
+      position: relative;
+      width: 100vw;
+      height: auto !important;
+      overflow: hidden;
+      max-height: 100%;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-image {
+    filter: none;
+  }
+
+  .image-caption {
+    height: -webkit-fill-available; 
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    background-color: rgba(240, 124, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+
+  .gallery-item:hover .image-caption {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .caption-title {
+    text-align: end;
+    color: #2d2d2d;
+    font-family: "gontserrat-bold";
+    font-size: medium;
+    font-weight: bolder;
+    padding-bottom: 6%;
+  }
+
+  .caption-description {
+    font-family: "gontserrat";
+color: white;
+font-size: xx-small;
+  }
+    .mobile-caption-description-heading{
+        font-size: medium;
+    }
+    .amenity-header-buttons{
+        display: none;
+    }
+    .amenity-header{
+        flex-direction: column;
+    }
+    .amenity-header-title{
+        font-size: 18pt;
+
+        clip-path: none;
+        padding: 3% 1%;
+        
+        width: 98%;
+        text-align: center;
+    }
+    .image-container {
+        width: 100%;
+        height: auto !important;
+        min-width: 100%;
+    }
+    .amenity-header-description-contianer{
+        margin: 1% 0%;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .amenity-header-description-content{
+        margin: 0;
+        padding: 4% 0%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        font-size: x-small;
+        height: max-content;
+    }
+    .image-container{
+        position: relative;
+        width: 100%;
+        height: auto !important;
+        min-width: 100%;
+        overflow: hidden;
+        
+    }
+    .amenity-slider{
+        display: none;
+    }
+    .mobile-view-slid{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-caption-description-content{
+        font-size: 6pt;
+    }
+    .mobile-caption{
+        width: 70%;
+    }
+  @media (max-width: 480px) {
+    
+  }
+  
+   }
+   @media (min-width: 481px) and (max-width: 767px) {
+    .caption-text {
+        margin-left: 21%;
+        margin-right: 8%;
+        margin-top: 53%;
+        text-align: right;
+    }
+
+    .mobile-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+       .gallery-item {
+      position: relative;
+      width: 100vw;
+      height: auto !important;
+      overflow: hidden;
+      max-height: 100%;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-image {
+    filter: none;
+  }
+
+  .image-caption {
+    height: -webkit-fill-available; 
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    background-color: rgba(240, 124, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+
+  .gallery-item:hover .image-caption {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .caption-title {
+    text-align: end;
+    color: #2d2d2d;
+    font-family: "gontserrat-bold";
+    font-size: medium;
+    font-weight: bolder;
+    padding-bottom: 6%;
+  }
+
+  .caption-description {
+    font-family: "gontserrat";
+color: white;
+font-size: xx-small;
+  }
+    .mobile-caption-description-heading{
+        font-size: medium;
+    }
+    .amenity-header-buttons{
+        display: none;
+    }
+    .amenity-header{
+        flex-direction: column;
+    }
+    .amenity-header-title{
+        font-size: 18pt;
+
+        clip-path: none;
+        padding: 3% 1%;
+        
+        width: 98%;
+        text-align: center;
+    }
+    .image-container {
+        width: 100%;
+        height: auto !important;
+        min-width: 100%;
+    }
+    .amenity-header-description-contianer{
+        margin: 1% 0%;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .amenity-header-description-content{
+        margin: 0;
+        padding: 4% 0%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        font-size: x-small;
+        height: max-content;
+    }
+    .image-container{
+        position: relative;
+        width: 100%;
+        height: auto !important;
+        min-width: 100%;
+        overflow: hidden;
+        
+    }
+    .amenity-slider{
+        display: none;
+    }
+    .mobile-view-slid{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-caption-description-content{
+        font-size: 6pt;
+    }
+    .mobile-caption{
+        width: 70%;
+    }
+    .caption{
+        width: 70%;
+    }
+    .caption-description-heading{
+        font-size: medium;
+    }
+    .caption-description-content{
+        font-size: 6pt;
+    }
+    .amenity-header-buttons{
+        display: none;
+    }
+    .amenity-header{
+        flex-direction: column;
+    }
+    .amenity-header-title{
+        font-size: 18pt;
+
+        clip-path: none;
+        padding: 1%;
+        width: 98%;
+        text-align: center;
+    }
+    .image-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: auto !important;
+        min-width: 100%;
+    }
+    .amenity-header-description-contianer{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .amenity-header-description-content{
+        text-align: center;
+        width:96%;
+        font-size: small;
+        padding: 2rem 0.5rem;
+
+    }
+    .amenity-slider{
+        display: none;
+    }
+    .mobile-view-slid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+   }
+   @media (min-width: 768px) and (max-width: 1024px) {
+    .amenity-header{
+        flex-direction: column;
+    }
+    .amenity-header-title{
+        font-size: 25pt;
+
+        clip-path: none;
+        padding: 2%;
+        width: 96%;
+        text-align: center;
+    }
+    .amenity-header-description-content{
+        text-align: center;
+        padding: 2%;
+        width:95%;
+        font-size: medium;
+        padding: 1rem 0;
+
+
+    }
+    .amenity-header-description-contianer{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 3%;
+    }
+   }
+   @media (min-width: 1025px) and (max-width: 1280px) {
+    .slick-slide{
+        width: auto !important;
+      }
+      
+   }

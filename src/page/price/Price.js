@@ -27,11 +27,11 @@ const Price = () => {
 </h1>
            </div>
            
-            <div className={"price-subhead slide-out-right" }   ><p>optimize your workouts with our specialized dedicated  to function fitness, enhancing athleticism and the other crafted for weightlifiting  and bodybuilding  </p></div>
+            <div className={"price-subhead slide-out-right" }   ><p>Optimize your workouts with our specialized floors: one dedicated to functional fitness, enhancing athleticism, and the other crafted for weightlifting and bodybuilding.  </p></div>
            </div>
        
- <div className='price-card-container' >
-               <div className={isVisiblecardcontainer?"price-card-second-bg slide-bottom":"price-card-second-bg"} ref={elementRefcardcontainer}>
+ <div className='price-card-container' ref={elementRefcardcontainer}>
+               <div className={isVisiblecardcontainer?"price-card-second-bg slide-bottom":"price-card-second-bg"}>
             <div className= {"price-card1" }  >
                <div className='price-card1-head'>  ANNUAL SUBSCRIPTION   </div>  
                <div className='price-card1-amount'> ₹24,999</div>   
@@ -52,10 +52,10 @@ const Price = () => {
                <div className='price-card2-amount'> ₹4,999</div>               </div>
         </div>
             <div className='price-split' >
-                    <div  className={isVisiblecardcontainer ? "price-split-text1 fade-in":"price-split-text1 fade-out" }  >
+                    <div  className={isVisiblecardcontainer ? "price-split-text1 fade-in":"price-split-text1 " }  >
                         FUNCTIONAL TRAINING
                     </div>
-                    <div className={isVisiblecardcontainer ? "price-split-text2 fade-in":"price-split-text2 fade-out" }>
+                    <div className={isVisiblecardcontainer ? "price-split-text2 fade-in":"price-split-text2 " }>
                         GYM TRAINING
                     </div>
             </div>

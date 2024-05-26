@@ -5,87 +5,76 @@
   }
 .map {
     margin: 0.5rem 0 0 0;
-    width: 60vw; /* Set the desired width */
+    width: 100%; /* Set the desired width */
     height: 50vh; /* Set the desired height */
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
 
   }
   .contact-main-container{
+    position: relative;
     background-color: rgba(0, 0, 0, 0.881);
-    width: 100vw;
+    width: 100%;
     background-size: 60vw 50vh;
 
   }
+  .contact-mobile-div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
   .contact-map{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .bglog{
     margin-right: 4rem;
-    width: 28vw;
+    width: 25vw;
     height: 40vh;
   }
   .contact-map-container{
+    display: flex;
+    flex-direction: column;
     position: relative;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-weight: 100%;
 
   }
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }.logoright{
+    position: absolute;
+    left: 0;
+    top: 1%;
+    width: calc(15% + 20px); 
+  }
+  .logoleft{
+    position: absolute;
+    right: 0;
+    top: 1%;
+    width: calc(15% + 20px); 
+  }
   .contact-logo-container{
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top:6rem;
-    left:60rem;
+ 
   }
-  .contact-number-one{
-    font-size: small;
-    position: absolute;
-    top: 6%;
-    left:42.5%;
-    width: max-content;
+  .contact-mobile-div{
     display: flex;
-    background-color:  #F07C00;
-    color: white;
-    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);  
+    flex-direction: column-reverse;
   }
-  .contact-email{
-    position:absolute;
-    top:8rem;
-    right: 42.7rem;
-    width: max-content;
-    font-size: small;
-    display: flex;
-    background-color:  #F07C00;
-    color: white;
-    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
-     
-    
-  }
-  .contact-address{
-    width: 25vw;
-    position: absolute;
-    top:13rem;
-    right:4rem;
-    font-size: small;
-    display: flex;
-    background-color:  #F07C00;
-    color: white;
-    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
-
-  }
-  .contact-number-two{
-    width: max-content;
-    font-size: small;
-position: absolute;
-top: 4.8rem;
-right: 41rem;
-    display: flex;
-    background-color:  #F07C00;
-    color: white;
-    clip-path: polygon(11% 0, 100% 0%, 93% 100%, 0% 100%);       
-  }
+  
+ 
+  
+  
   .contact-icon {
     padding: 0.2rem;
     size: xl;
@@ -104,10 +93,14 @@ right: 41rem;
     flex-direction: column;
   }
   .contact-content{
+    flex-direction: column;
     padding:0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .contact-mobile-div{
+    position: relative;
   }
   .contact-logo-des{
     padding: 1rem;
@@ -119,6 +112,350 @@ right: 41rem;
   .contact-logo-destwo{
     padding: 1rem;
     font-family: "gontserrat";
-    font-size: small;
+    font-size: medium;
     color: white;
+  }
+ .contact-mobile-footer{
+  display: none;
+ }
+ .bglog{
+  display: none;
+ }
+ .contact-phone-one{
+  font-family: "gontserrat";
+font-size: small;
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);  
+
+  width: max-content;
+  right: 0;
+  top:54%;
+  z-index: 1;
+  background-color: #F07C00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items: center;
+ color: white;
+  position:absolute;
+ }
+ .contact-phone-two{
+  font-size: small;
+
+  font-family: "gontserrat";
+
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);  
+
+  width: max-content;
+  top:64%;
+  right: 0;
+  z-index: 1;
+  background-color: #F07C00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items: center;
+ color: white;
+  position:absolute;
+ }
+ .contact-phone-two .conatact-content{
+  padding: 0 3rem;
+ }
+ .contact-email{
+  font-family: "gontserrat";
+
+  z-index: 1;
+  position:absolute;
+  top: 74%;
+  right: 0%;
+  width: max-content;
+  font-size: small;
+  display: flex;
+  background-color:  #F07C00;
+  color: white;
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);       
+   
+  
+}
+.contact-address{
+  font-family: "gontserrat";
+  z-index: 1;
+ width: max-content;
+  position: absolute;
+  top: 84%;
+  right: 0%;
+  font-size: small;
+  display: none;
+  background-color:  #F07C00;
+  color: white;
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);       
+
+}
+.contact-email:hover{
+cursor: pointer;
+}
+.contact-phone-two:hover{
+  cursor: pointer;
+}
+.contact-phone-one:hover{
+  cursor: pointer;
+}
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .contact-logo-container{
+      left: 0%;
+      top: 33%;
+    }
+    
+    .bglog{
+      margin-right: 2rem;
+      height: 35vh;
+    }
+      .contact-number-one{
+        top: 22.5%;
+        left: 40%;
+
+    }
+   
+    
+    .contact-number-two{
+      top: 36.5%;
+      left: 37.6%;
+    }
+    
+   }
+  @media (min-width: 1281px) {
+   
+    .bglog{
+      margin-right: 2rem;
+      height: 35vh;
+    }
+    .contact-logo-container{
+      top: 33%;
+    }
+    /* .contact-number-one{
+      top: 20.5%;
+      right: 44.7%;
+
+    }
+    .contact-email{
+      top: 52.5%;
+      right: 35%;
+    }
+    .contact-address{
+      top: 67%;
+      right: 24.9%;
+    }
+    .contact-number-two{
+      top: 35.5%;
+      right: 42%;
+    } */
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .footer-content{
+      margin-left: 1rem;
+
+    }
+    .footer-logo{
+      height: 25vw;
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    }
+    .footer-logo img{
+      width: 85px;
+
+    }
+    .contact-footer-logo {
+      width: 100%;
+    }
+    .logoright{
+      display: none;
+    }
+    .logoleft{
+     display: none;
+    }
+    .contact-mobile-footer{
+      background-color:#1d1d1d;
+      font-family: "gontserrat";
+      font-size: small;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 1rem 0rem 1rem 0rem;
+      ;
+    }
+
+    .contact-number-one{
+      display: none;    
+
+    }
+    .contact-phone-two{
+      display: none;
+    }
+    .contact-email{
+      display: none;    
+
+      
+    }
+    .contact-mobile-phone-one{
+      padding: 0.5rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+
+    }
+    .contact-mobile-phone-two{
+      padding: 0.5rem 0;
+      align-items: center;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+
+    }
+    .contact-mobile-email{
+      padding: 0.5rem 0;
+      align-items: center;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+
+    }
+    .contact-mobile-address{
+      padding: 0.5rem 0;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+    }
+    .contact-mobile-icon{
+      margin-left: 1rem;
+      color: #F07C00;
+    }
+    .contact-address{
+      display: none;    
+      
+  
+    }
+    .contact-number-two{
+     display: none;    
+    }
+    .contact-icon{
+      padding: 20px;
+    
+    }
+    .contact-logo-container{
+      position:inherit;
+      clip-path:none;
+    }
+    .contact-phone-one{
+      display:none;
+     
+
+      
+    }
+   
+   .contact-content{
+      align-items:flex-start
+    }
+   
+    
+    
+    .contact-number-two{
+      clip-path:none;
+      position:inherit;
+      width: 100vw;
+    }
+   
+    .map{
+      width:99vw;
+      clip-path: none;
+    }
+    .bglog{
+     display: none;
+
+    }
+    .conatact-container{
+    flex-direction: column;
+    }
+    .contact-logo-container{
+      top: 0%;
+      left: 0%;
+    }
+    .contact-logo img{
+      width: 43vw;
+        height: auto !important;
+        max-height: 100%;
+    }
+    .contact-logo-des{
+      font-size: large;
+    }
+    .contact-logo-destwo{
+      font-size: x-small;
+      text-align: center;
+    }
+    .contact-mobile-div{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .logoright{
+     display: none;
+    }
+    .logoleft{
+      display: none0;
+    }
+    .contact-logo-destwo {
+     
+      font-size: x-small;
+         
+  }
+  .contact-icon{
+    justify-content: flex-start;
+  }
+  .contact-logo img{
+    width: 65%;
+    }
+    .contact-icon{
+      padding-right: 0;
+      padding-left: 2rem;
+    }
+  .contact-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-logo-des{
+    font-size: medium;
+  }
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .contact-icon{
+      padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    }
+
+    
+    .logoright{
+      position: absolute;
+      left: 0;
+      top: 1%;
+      width: calc(15% + 75px); 
+    }
+    .logoleft{
+      position: absolute;
+      right: 0;
+      top: 1%;
+      width: calc(15% + 75px); 
+    }
   }

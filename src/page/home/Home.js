@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import "./Home.css"
 import Navbar from '../../components/Navbar'
 import useFadeInAnimation from '../useFadeInAnimation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
   const { isVisible: isVisiblehomespin, elementRef: elementRefhomespin } = useFadeInAnimation();
 
@@ -21,22 +23,22 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='home-main-container' id='home' ref={homeRef}>
+    <div className='home-main-container' >
       
-      <div  className={isVisiblehomespin ? "home-container circles-in":"home-container" } >
+      <div  className={isVisiblehomespin ? "home-container circles-in":"home-container" } id='home' ref={homeRef} >
         <div className='home-container-lggym'>
             LARGEST GYM IN CHENNAI
         </div>
         <div  className='home-container-launchtxt'>
         IS NOW ACCESSIBLE
         </div>
-        <div className='home-container-reg'>
+        <div className='home-container-reg' onClick={()=>{ window.open("https://wa.me/9566526089", '_blank','noopener noreferrer'); }}>
         
           <div className='home-container-reg2'>
                       REGISTER NOW
 
           </div>
-          <div className='home-container-icon'>&#62;</div>
+          <div className='home-container-icon'><FontAwesomeIcon icon={faAngleRight} /></div>
         </div>
 
 

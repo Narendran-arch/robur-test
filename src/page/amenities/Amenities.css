@@ -40,7 +40,7 @@
     align-items: end;
   }
   
-  .slide {
+  /* .slide {
     display: flex;
     height: 100%;
     flex-direction: row;
@@ -50,9 +50,9 @@
     font-size: small;
     color: #a6a6a6;
     font-family: "montserrat";
-    overflow: hidden; /* Ensure the content doesn't overflow */
+    overflow: hidden;
   }
-  
+   */
   .carousel-button-container{
     display: flex;
     height: 100%;
@@ -194,7 +194,8 @@
       
     
     .amenities-image-container {
-        display: flex;
+      
+        display: none;
         flex-wrap: wrap;
       }
       
@@ -278,15 +279,27 @@
       .text-animation {
         animation: flipRight 1s ease ;
       }
+
+
+      
       @media (min-width: 320px) and (max-width: 480px) {
-  
-        .slide{
-          padding: 1rem;
+        .amenities-mob-title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
+  .amenities-title div{
+    padding: 2rem 0;
+
+  }
+        /* .slide{
+          padding: 1rem;
+        } */
         .carousel-button-container{
           padding: 1rem;
         }
         .amenities-image-container{
+          display: flex;
             flex-direction: column;
         }
         .amenities-image-row{
@@ -316,13 +329,14 @@
       }
       @media (min-width: 481px) and (max-width: 767px) {
   
-        .slide{
+        /* .slide{
           padding: 1rem;
-        }
+        } */
         .carousel-button-container{
           padding: 1rem;
         }
         .amenities-image-container{
+          display: flex;
             flex-direction: column;
         }
         .amenities-image-row{
@@ -352,6 +366,9 @@
         
       }
       @media (min-width: 768px) and (max-width: 1024px) {
+        .amenities-image-container{
+          display: flex;
+        }
   
         .amenities-carousels{
           width: max-content;

@@ -6,6 +6,10 @@
     src: url('../../fonts/aAtmospheric.ttf') ;
         
   }
+a{
+    text-decoration: none;
+    color: white;
+}
 .menubar-container div.active {
     color:#F07C00
 } 
@@ -24,8 +28,10 @@
     color: #F07C00;
 }
 .menu-bar{
-    position: fixed;
-    top: 2%;
+    display: none;
+    position: absolute;
+    
+    top: 0%;
    width: 100vw;
    background-color: #111111eb;}   
   .hambhurger-socialnav-container{
@@ -42,9 +48,12 @@
     width: 200px;
 }
 .navbaricon-container{
-    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
     width: 30vw;
-    background-color: black;
+    background-color:rgba(0, 0, 0, 0.872);
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 .navbaricon-container div{
@@ -61,11 +70,12 @@
 }
 .navbar-main-container{
     
-    background-color: #000000c9;
+    background-color:rgb(0 0 0 / 69%);
     width: 100vw;
     display: flex;
     flex-direction: row;
     position: fixed;   
+    z-index:1;
     top: 0;
 
 }
@@ -92,7 +102,7 @@ display: flex;
 .hambhurger-socialnav-container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;   
+    justify-content: flex-start;   
 
 }
 .menubar-container{
@@ -107,8 +117,17 @@ display: flex;
     padding: 0rem 2rem;
     color: white;
 }
-.socialnav-container div{
+.socialnav-container a{
     color: white;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+.home-container-reg:hover{
+    cursor: pointer;
+}
+.socialnav-container-mobile a{
+    color: white;
+    margin: 1%;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
 }
@@ -117,7 +136,7 @@ display: flex;
     cursor: pointer;
 
 }
-.hamburger-socialnav-container :hover{
+.socialnav-container-mobile :hover{
     background-color:#F07C00;
     cursor: pointer;
 
@@ -131,6 +150,18 @@ display: flex;
     color:#F07C00;
     cursor: pointer;
  
+}
+.hamburger-menubar-container{
+    padding: 0.5rem;
+    color: white;
+    font-family: "gontserrat";
+    font-size: small;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hamburger-menubar-container div {
+    padding: 3%;
 }
 .home-container{
     margin-right: 145px;
@@ -149,8 +180,7 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0rem 2rem 0rem;
-    background-color:#f07c006d;
+    margin: 0.5rem 0rem 1.1rem 0rem;    background-color:#f07c006d;
     font-size: 30pt;
     padding: 1rem   ;
 }
@@ -159,6 +189,7 @@ display: flex;
     font-size: 15pt;
 }
 .home-container-reg{
+    margin-right: 2px;
     display: flex;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
@@ -212,12 +243,23 @@ display: flex;
     
   
   .circles-in{
-    animation: rotateAndZoomIn 1.5s ease forwards;
+    animation: rotateAndZoomIn 1.5s ease ;
   }
   .socialnav-container-mobile{
     display: none;
   }
+.hambhurger-menubar-container{
+    font-family: "Bebas Neue", sans-serif;
+}
+
   @media (min-width: 320px) and (max-width: 480px) {
+    .menu-bar{
+        display: block;
+    }
+    .home-container-reg2{
+        justify-content: center;
+    }
+
     .socialnav-container-mobile{
         display: flex;
         flex-direction: row;
@@ -232,17 +274,26 @@ display: flex;
         background-image: url('../../image//backgroundmobile.png');
         background-size: 100% 100%;
     }
-
+    .navbaricon-container{
+        display: flex;
+        clip-path: none;
+        width: auto;
+        justify-content: center;
+        padding: 1rem;
+    }    
     .burger-menu {
         display: block;
-        position: fixed;
-        top: 0px; /* Adjust as needed */
+        position: absolute;
+        z-index: 1;
+       
+        left: 2%;
+        top: 1%; 
       }
     .home-container-launchtxt{
-        font-size: 11pt;
+        font-size: 15pt;
     }
     .home-container-lggym{
-        font-size: 14pt;
+        font-size: medium;
     }
   .navbar-main-container{
     display: none;
@@ -251,36 +302,55 @@ display: flex;
     margin-right: 0rem;
     flex-wrap: nowrap;
     padding-left: 0;
-    height: 158%;
+    height: 140%;
     align-items: center;
     justify-content: center;
   }
   .home-container-icon{
-    width: 10%;
+    width: 15%;
   }
   .home-container-reg{
-    width: 152px;
+    width: 130px;
+    font-size: x-small;
   }
   .burger-menu{
     color: #F07C00;
   }
     .navbaricon{
-        width: 100px;
+        width: 150px;
     }
     .navbaricon-container{
+        clip-path: none;
         width: auto;
     }
     .hambhurger-socialnav-container{
         background-color: #000000ad;
     }
+    .home-container-launchtxt{
+        margin: 1rem 0rem 1.5rem 0rem;
+    }
+    
   }
   @media (min-width: 481px) and (max-width: 767px) {
+    .home-container-launchtxt{
+        font-size: 17pt;
+    }
+    .navbaricon-container{
+        padding: 1.5rem 1.5rem 1.5rem 1.2rem;   
+    }
+    .home-main-container{
+        background-image: url('../../image//backgroundmobile.png');
+        background-size: 100% 100%;
+    }
       
       .home-container{
-          padding: 0%;
+          padding-left :2rem;
+          margin-right: 0px;
+          height: 132%;
+          align-items: center;
         }
         .menubar-container div{
-            font-size: smaller;
+            font-size: x-small;
             padding:0 10px 0 0 ;
         }
         .menubar-container{
@@ -291,13 +361,13 @@ display: flex;
             justify-content: flex-start;
         }
         .navbaricon{
-            width: 140px;
+            width: 120px;
         }
         .fa-xl{
             font-size: 15px;
         }
     }
-    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
     
       .home-main-container{
           background-image: url('../../image//backgroundtabport.png');
@@ -320,12 +390,13 @@ display: flex;
     width: 142px;
   }
     .home-container{
+        height: 117%;
         padding: 0%;
         margin: 0%;
         padding-left: 20rem;
      }
         .menubar-container div{
-            font-size: large;
+            font-size: medium;
         padding:0 30px 0 0 ;
         }
         .menubar-container{
@@ -351,10 +422,12 @@ display: flex;
         height: 100vh;
         background-position: center;
     }
+    
     .home-container{
+        height: 110%;
         margin: 0%;
         padding: 0%;
-        padding-left: 30rem;
+        padding-left: 32rem;
     }
     .home-container-launchtxt{
         font-size: 30pt;
@@ -368,13 +441,16 @@ display: flex;
     }
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
+    .home-container-launchtxt{
+        font-size: 27pt;
+    }
   
-     /* CSS */.home-main-container{
+   .home-main-container{
         background-size: 100vw 100vh;
     }
   }@media (min-width: 1281px) {
   
-    /* CSS */.home-main-container{
+    .home-main-container{
         background-size:100% 100vh;
     }
     
@@ -382,7 +458,6 @@ display: flex;
   }
   @media only screen and (min-height: 1440px){
     .home-main-container{
-        /* background-image: url('../../image//background1440.png'); */
         object-fit: cover;
    
     }
@@ -391,3 +466,17 @@ display: flex;
         height: 111%;
     }
   }
+  @media (min-width: 1281px) {
+    .home-container-reg{
+        margin-right: 3px;
+    }
+    .home-container-launchtxt {
+        font-size: 34pt;
+        padding: 2rem 1rem ;
+    }
+    .home-container{
+        margin-right: 90px;        height: 117.5%;
+        padding-left: 44rem;
+    }
+  }
+  /* conssistantly and word revese 1st borde 3 border 4screen image space  */
