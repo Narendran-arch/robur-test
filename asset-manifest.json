@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.9faf4981.css",
-    "main.js": "/robur-test/static/js/main.4f33a0f5.js",
+    "main.css": "/robur-test/static/css/main.d1da2fc9.css",
+    "main.js": "/robur-test/static/js/main.cdecef0c.js",
     "static/js/453.6772480d.chunk.js": "/robur-test/static/js/453.6772480d.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
     "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
@@ -39,12 +39,12 @@
     "static/media/slick.ttf": "/robur-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/robur-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/robur-test/index.html",
-    "main.9faf4981.css.map": "/robur-test/static/css/main.9faf4981.css.map",
-    "main.4f33a0f5.js.map": "/robur-test/static/js/main.4f33a0f5.js.map",
+    "main.d1da2fc9.css.map": "/robur-test/static/css/main.d1da2fc9.css.map",
+    "main.cdecef0c.js.map": "/robur-test/static/js/main.cdecef0c.js.map",
     "453.6772480d.chunk.js.map": "/robur-test/static/js/453.6772480d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9faf4981.css",
-    "static/js/main.4f33a0f5.js"
+    "static/css/main.d1da2fc9.css",
+    "static/js/main.cdecef0c.js"
   ]
 }
