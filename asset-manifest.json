@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robur-test/static/css/main.b58700f5.css",
-    "main.js": "/robur-test/static/js/main.095b6c2f.js",
+    "main.css": "/robur-test/static/css/main.0497a585.css",
+    "main.js": "/robur-test/static/js/main.b151c22a.js",
     "static/js/453.6772480d.chunk.js": "/robur-test/static/js/453.6772480d.chunk.js",
     "static/media/backgroundlaptop.png": "/robur-test/static/media/backgroundlaptop.acdcbde252233e1973a6.png",
     "static/media/thirdbg.png": "/robur-test/static/media/thirdbg.a2f828093082ca8a3aa3.png",
@@ -12,6 +12,8 @@
     "static/media/GROUP TRAINING.png": "/robur-test/static/media/GROUP TRAINING.2949a4d6349e14e28534.png",
     "static/media/3DDumbbell.png": "/robur-test/static/media/3DDumbbell.24568ad42f529a63ce33.png",
     "static/media/MMA SESSIONS.png": "/robur-test/static/media/MMA SESSIONS.c696f7d24f9afc10c2cc.png",
+    "static/media/amenities7.png": "/robur-test/static/media/amenities7.a8141547d9ef68283cb1.png",
+    "static/media/amenities2.png": "/robur-test/static/media/amenities2.f9edacf99543096cd904.png",
     "static/media/ICE BATH.png": "/robur-test/static/media/ICE BATH.831087ef1221fa277d46.png",
     "static/media/ZUMBA .png": "/robur-test/static/media/ZUMBA .0b952b543d9e2b14deab.png",
     "static/media/PERSONAL TRAINING.png": "/robur-test/static/media/PERSONAL TRAINING.10f0ce5c19d3f763af19.png",
@@ -20,10 +22,8 @@
     "static/media/amenities4.png": "/robur-test/static/media/amenities4.d3f66b18ab9f8969aca3.png",
     "static/media/YOGA.png": "/robur-test/static/media/YOGA.41b73dd0ed2f97d4ae29.png",
     "static/media/STEAM BATH.png": "/robur-test/static/media/STEAM BATH.557d08d508c7c4b8a1cc.png",
-    "static/media/amenities7.png": "/robur-test/static/media/amenities7.7dab63908e527b6c8a35.png",
-    "static/media/amenities2.png": "/robur-test/static/media/amenities2.bfb441d0ad100cae4de4.png",
+    "static/media/amenities5.png": "/robur-test/static/media/amenities5.bbf74a77e1a9e794b038.png",
     "static/media/amenities6.png": "/robur-test/static/media/amenities6.f4ff9c3f1c262c2b091d.png",
-    "static/media/amenities5.png": "/robur-test/static/media/amenities5.91ce83f0316c0ee9d064.png",
     "static/media/amenities1.png": "/robur-test/static/media/amenities1.d7ecd95f71c71267af78.png",
     "static/media/Gontserrat-ExtraBold.ttf": "/robur-test/static/media/Gontserrat-ExtraBold.45de232d5418bb950201.ttf",
     "static/media/Gontserrat-Regular.ttf": "/robur-test/static/media/Gontserrat-Regular.cc49d641c0b5d3d7b157.ttf",
@@ -39,12 +39,12 @@
     "static/media/slick.ttf": "/robur-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/robur-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/robur-test/index.html",
-    "main.b58700f5.css.map": "/robur-test/static/css/main.b58700f5.css.map",
-    "main.095b6c2f.js.map": "/robur-test/static/js/main.095b6c2f.js.map",
+    "main.0497a585.css.map": "/robur-test/static/css/main.0497a585.css.map",
+    "main.b151c22a.js.map": "/robur-test/static/js/main.b151c22a.js.map",
     "453.6772480d.chunk.js.map": "/robur-test/static/js/453.6772480d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b58700f5.css",
-    "static/js/main.095b6c2f.js"
+    "static/css/main.0497a585.css",
+    "static/js/main.b151c22a.js"
   ]
 }
